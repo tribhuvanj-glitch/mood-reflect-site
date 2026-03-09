@@ -15,16 +15,18 @@
 
 <body>
 
+<div class="bg-glow"></div>
+
 <nav class="navbar">
 
 <div class="logo">Mood Reflect</div>
 
 <div class="navlinks">
 
-<a href="#problem">Problem</a>
-<a href="#features">Features</a>
-<a href="#demo">Demo</a>
-<a href="#market">Market</a>
+<a onclick="scrollToSection('problem')">Problem</a>
+<a onclick="scrollToSection('features')">Features</a>
+<a onclick="scrollToSection('demo')">Demo</a>
+<a onclick="scrollToSection('market')">Market</a>
 
 <button onclick="scrollToSection('download')">Download</button>
 
@@ -36,23 +38,25 @@
 
 <section class="hero">
 
-<div class="hero-left">
+<div class="hero-left reveal">
 
 <h1>
-AI-Powered Mental Health
+AI Mental Health
 Support for Students
 </h1>
 
 <p>
 Helping students understand emotions,
-track moods and receive AI-guided support.
+track their mood and receive AI-guided support.
 </p>
 
 <div class="hero-buttons">
 
-<button onclick="scrollToSection('demo')">Watch Demo</button>
+<button onclick="scrollToSection('demo')">
+Watch Demo
+</button>
 
-<button onclick="scrollToSection('download')" class="secondary">
+<button class="secondary" onclick="scrollToSection('download')">
 Download App
 </button>
 
@@ -60,9 +64,10 @@ Download App
 
 </div>
 
-<div class="hero-right">
 
-<img src="app.png">
+<div class="hero-right reveal">
+
+<img src="app.png" class="phone">
 
 </div>
 
@@ -70,9 +75,9 @@ Download App
 
 
 
-<section id="problem">
+<section id="problem" class="reveal">
 
-<h2>India's Student Mental Health Crisis</h2>
+<h2>India’s Student Mental Health Crisis</h2>
 
 <div class="stats">
 
@@ -103,7 +108,7 @@ Download App
 
 
 
-<section id="features">
+<section id="features" class="reveal">
 
 <h2>Core Features</h2>
 
@@ -111,32 +116,32 @@ Download App
 
 <div class="card">
 <h3>Mood Analysis</h3>
-<p>Track emotions and mental patterns.</p>
+<p>Track emotional patterns.</p>
 </div>
 
 <div class="card">
 <h3>Dream Analysis</h3>
-<p>AI powered dream insights.</p>
+<p>AI dream insights.</p>
 </div>
 
 <div class="card">
 <h3>ReflectX AI</h3>
-<p>An AI companion for emotional support.</p>
+<p>AI mental health companion.</p>
 </div>
 
 <div class="card">
 <h3>Depression Test</h3>
-<p>Early detection assessment tools.</p>
+<p>Early detection screening.</p>
 </div>
 
 <div class="card">
 <h3>Emergency SOS</h3>
-<p>Immediate help access.</p>
+<p>Immediate help resources.</p>
 </div>
 
 <div class="card">
 <h3>Goals & Growth</h3>
-<p>Build healthy emotional habits.</p>
+<p>Build emotional habits.</p>
 </div>
 
 </div>
@@ -145,7 +150,7 @@ Download App
 
 
 
-<section id="demo">
+<section id="demo" class="reveal">
 
 <h2>Product Demo</h2>
 
@@ -162,7 +167,7 @@ allowfullscreen>
 
 
 
-<section id="market">
+<section id="market" class="reveal">
 
 <h2>Market Opportunity</h2>
 
@@ -195,7 +200,7 @@ allowfullscreen>
 
 
 
-<section id="download" class="cta">
+<section id="download" class="cta reveal">
 
 <h2>Join Us Supporting Student Mental Health</h2>
 
@@ -215,5 +220,4 @@ allowfullscreen>
 <script src="script.js"></script>
 
 </body>
-
 </html>
