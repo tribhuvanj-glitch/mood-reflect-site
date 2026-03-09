@@ -1,15 +1,23 @@
-function downloadApp(){
-
-alert("Download coming soon");
-
+:::
+function scrollToSection(id){
+document.getElementById(id).scrollIntoView({
+behavior:"smooth"
+});
 }
 
-function scrollToDemo(){
+function downloadApp(){
+window.location.href="#download";
+}
 
-document.getElementById("demo").scrollIntoView({
-
-behavior:"smooth"
-
+const observer = new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("active");
+}
+});
 });
 
-}// optional JS file for future enhancements
+document.querySelectorAll(".reveal").forEach(el=>{
+observer.observe(el);
+});
+:::
