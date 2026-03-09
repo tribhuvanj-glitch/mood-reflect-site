@@ -1,58 +1,100 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Mood Reflect</title>
 
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mood Reflect</title>
 
 <link rel="stylesheet" href="styles.css">
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<nav class="nav">
+<nav class="navbar">
 
-<h2>Mood Reflect</h2>
+<div class="logo">Mood Reflect</div>
 
-<div>
+<div class="navlinks">
 
 <a href="#problem">Problem</a>
 <a href="#features">Features</a>
 <a href="#demo">Demo</a>
 <a href="#market">Market</a>
-<a href="#download" class="nav-btn">Download</a>
+
+<button onclick="scrollToSection('download')">Download</button>
 
 </div>
 
 </nav>
 
 
-<section class="hero"> <div class="hero-text reveal"> <h1> AI-Powered Mental Health Support for Students </h1> <p> Helping students understand emotions, track their mood, and receive AI guidance. </p> <div class="hero-buttons"> <button onclick="scrollToSection('demo')"> Watch Demo </button> <button onclick="downloadApp()"> Download App </button> </div> </div> <img src="app-placeholder.png" class="phone"> </section> :::
+
+<section class="hero">
+
+<div class="hero-left">
+
+<h1>
+AI-Powered Mental Health
+Support for Students
+</h1>
+
+<p>
+Helping students understand emotions,
+track moods and receive AI-guided support.
+</p>
+
+<div class="hero-buttons">
+
+<button onclick="scrollToSection('demo')">Watch Demo</button>
+
+<button onclick="scrollToSection('download')" class="secondary">
+Download App
+</button>
+
+</div>
+
+</div>
+
+<div class="hero-right">
+
+<img src="app.png">
+
+</div>
+
+</section>
 
 
 
-<section id="problem" class="section">
+<section id="problem">
 
-<h2>India’s Student Mental Health Crisis</h2>
+<h2>India's Student Mental Health Crisis</h2>
 
 <div class="stats">
 
-<div class="card">
+<div class="stat">
+
 <h3>67%</h3>
 <p>Youth face mental health challenges</p>
+
 </div>
 
-<div class="card">
+<div class="stat">
+
 <h3>13,000+</h3>
 <p>Student suicides every year</p>
+
 </div>
 
-<div class="card">
+<div class="stat">
+
 <h3>94%</h3>
 <p>Never seek professional help</p>
+
 </div>
 
 </div>
@@ -61,75 +103,40 @@
 
 
 
-<section class="section alt">
-
-<h2>Why Current Apps Fail Students</h2>
-
-<p class="wide">
-
-Most mental health apps are designed for Western audiences.
-
-They fail to understand the unique pressures faced by
-Indian students such as academic competition, family expectations,
-and stigma around mental health.
-
-</p>
-
-</section>
-
-
-
-<section id="features" class="section">
+<section id="features">
 
 <h2>Core Features</h2>
 
 <div class="grid">
 
 <div class="card">
-
 <h3>Mood Analysis</h3>
-<p>Track emotions and identify patterns in mental wellbeing.</p>
-
+<p>Track emotions and mental patterns.</p>
 </div>
 
-
 <div class="card">
-
 <h3>Dream Analysis</h3>
-<p>AI-powered insights from emotional dream patterns.</p>
-
+<p>AI powered dream insights.</p>
 </div>
 
-
 <div class="card">
-
-<h3>ReflectX AI Assistant</h3>
-<p>An AI companion providing guidance and support.</p>
-
+<h3>ReflectX AI</h3>
+<p>An AI companion for emotional support.</p>
 </div>
 
-
 <div class="card">
-
-<h3>Depression Assessment</h3>
-<p>Early detection tools for mental health risks.</p>
-
+<h3>Depression Test</h3>
+<p>Early detection assessment tools.</p>
 </div>
 
-
 <div class="card">
-
 <h3>Emergency SOS</h3>
-<p>Immediate access to emergency help resources.</p>
-
+<p>Immediate help access.</p>
 </div>
 
-
 <div class="card">
-
 <h3>Goals & Growth</h3>
-<p>Build better emotional habits and track progress.</p>
-
+<p>Build healthy emotional habits.</p>
 </div>
 
 </div>
@@ -138,20 +145,15 @@ and stigma around mental health.
 
 
 
-<section id="demo" class="section alt">
+<section id="demo">
 
 <h2>Product Demo</h2>
 
 <div class="video">
 
-<iframe width="700" height="400"
-
+<iframe
 src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-
-frameborder="0"
-
 allowfullscreen>
-
 </iframe>
 
 </div>
@@ -160,131 +162,34 @@ allowfullscreen>
 
 
 
-<section class="section">
-
-<h2>Real Student Testing</h2>
-
-<p>
-
-Mood Reflect is currently being tested with
-<strong>200+ students at Greenway Model School</strong>.
-
-Real-world feedback is helping improve the platform.
-
-</p>
-
-<div class="stats">
-
-<div class="card">
-<h3>200+</h3>
-<p>Students Testing</p>
-</div>
-
-<div class="card">
-<h3>1 School</h3>
-<p>Active Deployment</p>
-</div>
-
-<div class="card">
-<h3>Continuous</h3>
-<p>Product Improvement</p>
-</div>
-
-</div>
-
-</section>
-
-
-
-<section id="market" class="section alt">
+<section id="market">
 
 <h2>Market Opportunity</h2>
 
 <div class="stats">
 
-<div class="card">
+<div class="stat">
 
 <h3>$1.4B</h3>
-<p>Mental health market in India by 2030</p>
+<p>Mental health market by 2030</p>
 
 </div>
 
-
-<div class="card">
+<div class="stat">
 
 <h3>200k+</h3>
-<p>New mental health app users</p>
+<p>New digital wellness users</p>
 
 </div>
 
-
-<div class="card">
+<div class="stat">
 
 <h3>30%</h3>
-<p>Annual digital wellness growth</p>
+<p>Annual growth</p>
 
 </div>
 
 </div>
-
-</section>
-
-
-
-<section class="section">
-
-<h2>Business Model</h2>
-
-<div class="grid">
-
-<div class="card">
-
-<h3>Free</h3>
-
-<p>
-Mood tracking
-and journaling for all students
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>Premium</h3>
-
-<p>
-₹99/month for advanced AI insights
-</p>
-
-</div>
-
-
-<div class="card">
-
-<h3>Institutional</h3>
-
-<p>
-₹10,000/year for schools
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<section class="section alt">
-
-<h2>Technology Stack</h2>
-
-<p class="tech">
-
-React Native • Firebase • Gemini AI
-
-</p>
 
 </section>
 
@@ -292,18 +197,9 @@ React Native • Firebase • Gemini AI
 
 <section id="download" class="cta">
 
-<h2>
+<h2>Join Us Supporting Student Mental Health</h2>
 
-Join Us in Supporting
-Student Mental Health
-
-</h2>
-
-<button onclick="downloadApp()">
-
-Download Mood Reflect
-
-</button>
+<button>Download Mood Reflect</button>
 
 </section>
 
@@ -311,11 +207,7 @@ Download Mood Reflect
 
 <footer>
 
-<p>
-
 © Mood Reflect
-
-</p>
 
 </footer>
 
