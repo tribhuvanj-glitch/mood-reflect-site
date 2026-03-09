@@ -124,6 +124,11 @@ transform:translateY(-8px);
 box-shadow:0 20px 60px rgba(0,0,0,.6);
 }
 
+.icon{
+font-size:32px;
+margin-bottom:14px;
+}
+
 .video iframe{
 width:800px;
 height:450px;
@@ -132,7 +137,8 @@ border-radius:18px;
 }
 
 .cta{
-background:linear-gradient(120deg,#6c63ff,#9d63ff);
+background:#0f1020;
+border-top:1px solid rgba(255,255,255,.08);
 }
 
 .cta button{
@@ -141,6 +147,7 @@ padding:16px 36px;
 border:none;
 border-radius:10px;
 cursor:pointer;
+background:linear-gradient(90deg,#6c63ff,#8f63ff);
 }
 
 footer{
